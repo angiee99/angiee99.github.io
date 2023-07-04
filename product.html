@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wdth=device-width, initial-scale=1.0">
+    <title>Maynooth</title>
+    <link rel="icon" type="image/x-icon" href="pictures/logo/favicon.png">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body> 
+    <header class="header"> 
+        <span class = "logo-pic">
+            <a class = "logoN" href="index.html"> <img src = "pictures/logo/maynoothLOGO.png" width="37" height="25" alt="logo">MAYNOOTH</a>
+        </span>
+         <!-- Hamburger icon -->
+            <input class="side-menu" type="checkbox" id="side-menu">
+            <label class="hamb" for="side-menu">
+                <span class="hamb-line"></span>
+            </label>
+        
+        <nav class="nav"> 
+    
+                <ul class="menu">
+                    <li class = "nav_item">
+                        <p><a href="kitchen.html">KITCHEN</a></p>
+                    </li>
+                    <li class = "nav_item">
+                        <p><a href="product.html">PRODUCT</a></p>
+                    </li>
+                    <li class = "nav_item">
+                        <p><a href="inspiration.html">INSPIRATION</a></p>
+                    </li>
+                    <li class = "nav_item">
+                        <p><a href="contactUs.html">CONTACT</a></p> 
+                    </li> 
+                </ul>
+        </nav>
+        </header>
+
+    <main>
+        <div class = "product__container">
+            <h2>Chosen product</h2>
+            <section class = "product_info">
+
+            <div class = "pic-container">
+
+                <div class="column">
+                    <div class="el1">
+                      <img src="pictures/product/ProdTable.jpg" alt="Table" width = "400" 
+                      onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                </div>
+
+                <div class = "column2">
+
+                    <div class="row">
+                      <img src="pictures/product/ProdDarkChair.jpg" alt="Glass" width = "200" 
+                      onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+
+                    <div class="row">
+                      <img src="pictures/product/ProdGlass.jpg" alt="Drawers" width = "200" 
+                      onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                </div>
+            </div>
+
+
+                <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1</div>
+                                <img src="pictures/product/ProdTable.jpg" style="width:60%" alt="table"> 
+                                <div class="caption-container">
+                                    <p class="caption">Wooden table with chairs</p>
+                                </div>
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">2</div>
+                                <img src="pictures/product/ProdDarkChair.jpg" style="width:60%" alt="DarkChair">
+                                    <div class="caption-container">
+                                        <p class="caption">Crafted wooden chair</p>
+                                    </div>
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">3</div>
+                                <img src="pictures/product/ProdGlass.jpg" style="width:60%" alt="Glass">
+                                <div class="caption-container">
+                                    <p class="caption">Set of conteiners</p>
+                                </div>
+                            </div>
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                                
+                    </div>
+                </div>
+            <!-- </div>  -->
+
+                <div class = "product-text">
+                    <h2> Wooden table and chairs</h2>
+                    <p> Square table and a set of 4 chairs</p>
+                    <p>Styled wooden kitchen table with light-brown oak could be a perfect decision for your kitchen. </p>
+                    <p> Material: oak, wood</p>
+                    <p> Guarantee: 1 year </p>
+                    <div> 
+                      <table>
+                        <thead>
+                            <tr>
+                            <th scope="col">Dimention</th>
+                            <th scope="col">width</th>
+                            <th scope="col">length</th>
+                            <th scope="col">height</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>Table</td>
+                            <td>100</td>
+                            <td>200</td>
+                            <td>300</td>
+                            </tr>
+                            <tr>
+                                <td>Chairs</td>
+                                <td>50</td>
+                                <td>35</td>
+                                <td>80</td>
+                            </tr>
+                        </tbody>
+                       
+                      </table></div>
+                    <div class ="price">
+                        <p>200$</p>
+                        <div class ="add"><p>Add to cart</p></div>
+                    </div>
+                </div>
+            </section>
+            <section class = "similar">
+                <h2>Customers also search for</h2>
+                <div class = "similar-container">
+                    
+                        <div class="similar">
+                            <img src = "pictures/product/ProdModernTable.jpg"
+                                    alt="main picture" width="300" height="300">
+                            <div class="similar-capt"> 
+                                <p>Round kitchen table</p>
+                                <p>120$</p>
+                            </div>
+                        </div>
+                        
+                        <div class="similar">
+                            <img src = "pictures/product/ProdChairs.jpg"
+                                    alt="main picture" width="300" height="300">
+                                <div class="similar-capt"> 
+                                    <p>Wooden mini chairs</p>
+                                    <p>70$</p>
+                                </div>
+                        </div>
+                        
+                        <div class="similar">
+                            <img src = "pictures/product/ProdAntiqTable.jpg"
+                                    alt="AntiqTable" width="300" height="300">
+                                <div class="similar-capt"> 
+                                    <p>Antique-styled set of chairs</p>
+                                    <p>210$</p>
+                                </div>
+                        </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <div class = "footer__container">
+          <div class=" footer-cont1"> 
+            <div class="footer_block"> 
+              <p>Links</p>
+              <div> 
+                <ul class="f-menu">
+                  <li class = "f-item">
+                      <p><a href="kitchen.html">Kitchen</a></p>
+                  </li>
+                  <li class = "f-item">
+                      <p><a href="product.html">Product</a></p>
+                  </li>
+                  <li class = "f-item">
+                      <p><a href="inspiration.html">Inspiration</a></p>
+                  </li>
+                  <li class = "f-item">
+                      <p><a href="contactUs.html">Contact</a></p> 
+                  </li> 
+              </ul> 
+    
+                </div>
+            </div>
+            <div class="footer_block"> 
+              <p>Info</p>
+              <div>
+                <p>Shipping in EU</p>
+                <p>Free delivery for permanent clients</p>
+                <p>Making you feel home</p>
+                <p>since 2020</p>
+              </div>
+            </div>
+            <!-- <div class="footer_block"> 
+                Footer 3
+            </div> -->
+          </div>
+          <div class="footer-cont"> 
+            <div class="footer_end"> 
+              <p>Maynooth</p>
+              <p>Made as a student project</p>
+              <p>at UHK FIM</p>
+              <p>by Anhelina Kulkova</p>
+              <p>last updated: 18.01.2023</p>
+            </div>
+        </div>
+        </div>
+      </footer> 
+
+
+    <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementsByClassName("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += "active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+</body>
+</html>
